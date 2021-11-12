@@ -41,5 +41,5 @@ sysmon模块作为一个探测程序，实时采集系统的内存CPU等信息�
 发布 `count ${file path}`指令来发布统计任务，registry模块在收到指令后，会按照 sysmon 实例的数量均匀的散列拆分需要统计的words.txt, 拆分为words.txt-${实例ip:
 port}等多个子文件。 之后向所有的实例发送计算指令请求，待所有的实例完成相应的任务之后会通知到registry，之后registry模块会将所有的结果进行归并，归并后写入 结果文件。
 
+![](imgs/img-6.png)
 ![](imgs/img-7.png)
-![](imgs/img-8.png)
